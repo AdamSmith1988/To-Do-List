@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <!--jspdf-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">To Do List</h2>
+        <input type="text" id="myInput" placeholder="Add List Item...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+
+      </ul>  
+
+      <div class="centerBtn"><span onClick="resetElement()" class="resetBtn">Reset List</span></div>
+
+      <div id="editor"></div>
+      <div class="centerBtn"><span class="downloadBtn" id="cmd">Download List</span></div>
+
+      <script src="script.js"></script>
+</body>
+</html>
